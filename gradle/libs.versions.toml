@@ -48,7 +48,6 @@ sqlDelight-native = { module = "app.cash.sqldelight:native-driver", version.ref 
 compose-activity = { module = "androidx.activity:activity-compose", version.ref = "composeActivity" }
 appCompat = { module = "androidx.appcompat:appcompat", version.ref = "appCompat" }
 androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
-androidx-compose-material3 = { group = "androidx.wear.compose", name = "compose-material3", version.ref = "composeMaterial3" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinX.serialization)
     alias(libs.plugins.sqlDelight)
+    alias(libs.plugins.compose)
+    alias(libs.plugins.compose.compiler)
 }
 
 kotlin {
@@ -18,10 +20,18 @@ kotlin {
         iosX64(),
         iosArm64(),
         iosSimulatorArm64()
-    )
+    ).forEach {
+        it.binaries.framework {
+            baseName = "shared"
+        }
+    }
 
     sourceSets {
         commonMain.dependencies {
+
+            api(compose.runtime)
+            api(compose.foundation)
+            api(compose.material3)
             //put your multiplatform dependencies here
             implementation(libs.coroutines)
             // Dependency injection
