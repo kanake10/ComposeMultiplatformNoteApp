@@ -34,3 +34,12 @@ This cross-platform Note Taking CRUP app leverages Kotlin Multiplatform and [Jet
   <img src="https://github.com/user-attachments/assets/7858503a-7f4f-43d3-b917-bb3509cb44bd" alt="screenshot-2" height="700" width="320">
 </p>
 
+### Libraries and tools
+Some of the libraries and tools used in this project include:
+
+- [Jetpack Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform): The UI framework used to build the application's user interface across platforms.
+- [Kotlinx Coroutines](https://github.com/Kotlin/kotlinx.coroutines): Enables asynchronous programming for non-blocking operations.
+- [Koin](https://insert-koin.io/): A dependency injection framework for managing dependencies across your application.
+- [SqlDelight](https://cashapp.github.io/sqldelight/2.0.2/multiplatform_sqlite/): A Kotlin-based SQL database library with support for both Android and iOS.
+- [Kotlinx Serialization](https://github.com/Kotlin/kotlinx.serialization): Facilitates data serialization and deserialization in a format-agnostic way.
+
